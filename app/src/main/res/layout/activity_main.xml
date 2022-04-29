@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/get_data"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_shap"
+                android:onClick="getData"
+                android:text="Post Api" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/comment_id"
+                android:layout_width="match_parent"
+
+                android:layout_height="100dp"
+                android:layout_below="@+id/get_data"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_shap"
+                android:onClick="commentApi"
+                android:text="CommentApi" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/comment_id"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+               android:id="@+id/userApi"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_shap"
+                android:onClick="usersapi"
+                android:text="UserApi" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/photosApi"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/userApi"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_shap"
+                android:onClick="photosapi"
+                android:text="PhotosApi" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
